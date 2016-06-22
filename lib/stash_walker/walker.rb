@@ -56,7 +56,7 @@ module StashWalker
         json['errors'].each do |error|
           messages.push(error['message'])
         end
-        raise "Errors were encountered with URL #{@base}/#{uri}:\n#{messages.join("\n")}"
+        raise "Errors were encountered with URL #{@base_url}#{uri}:\n#{messages.join("\n")}"
       end
       return [json['values'], values(uri: uri, start: json['nextPageStart'])].flatten unless json['isLastPage']
       json['values']

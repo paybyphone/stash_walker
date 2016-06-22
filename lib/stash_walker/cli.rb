@@ -30,7 +30,7 @@ module StashWalker
           [options] are:
         EOS
 
-        opt :url, 'URL to your BitBucket server', type: String, default: 'https://bitbucket.org/'
+        opt :url, 'URL to your BitBucket server', type: String, required: true
         opt :username, 'Your BitBucket username', type: String
         opt :minify, 'Produce minified JSON', type: TrueClass, default: nil
         stop_on_unknown
