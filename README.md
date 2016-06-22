@@ -12,10 +12,10 @@ stash-walker: Fetch project URLs from BitBucket Server
 Usage:
   stash-walker [options] COMMAND ARGS
 [options] are:
-  -u, --url=<s>         URL to your BitBucket server (default: https://bitbucket.org/)
+  -u, --url=<s>         URL to your BitBucket server
   -s, --username=<s>    Your BitBucket username
   -m, --minify          Produce minified JSON
-  -h, --help            Show this message
+  -h, --help            Show this message<Paste>
 ```
 
 ## License
